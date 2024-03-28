@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 80px;
+}
+
+header #navgr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header #navgr .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navgr .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
+header #navgr .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header #navgr .nav-list .nav-item a:hover {
+  color: #777;
+  transition: color 0.3s;
+}
+
+header #navgr .hamburguer {
+  display: none;
+}
+@media (max-width: 740px) {
+  header #navgr .hamburguer{
+    display: block;
+  }
+  header #navgr .nav-list  {
+    display: none;
+  }
+}
+
+/*Estilização da ?MAIN*/
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+main #banner .banner-content .banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+main #banner .banner-content .banner-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 500px;
+}
+
+main #banner .banner-content .banner-btn {
+  background-color: #00abcc;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 8px 24px;
+  border: none;
+}
+main #banner img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  main #banner .banner-content{
+    text-align: center;
+  }
+}
+
+/*Section Posts*/
+
+section#posts {
+  margin-top: 71px;
+  background-color: #cdf7fa;
+}
+
+#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 12000px;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-link {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 20px;
+}
+
+#posts .posts-content .posts-cards .post-card {
+  background-color: white;
+  padding: 24px;
+}
+#posts .posts-content .posts-cards .post-card h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+#posts .posts-content .posts-cards .post-card span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 740px){
+  
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
